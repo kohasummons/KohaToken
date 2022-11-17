@@ -1,6 +1,6 @@
 # Koha
 
-An ERC20 Token unleashed into the polygon network. Has about enough supply for a small village. Can be radioactive☢️.
+An ERC20 Token unleashed onto the polygon network. Has about enough supply for a small village. Can be radioactive☢️.
 
 It comes with a `Koha.sol` contract, a test for that contract, and a script that deploys that contract.
 
