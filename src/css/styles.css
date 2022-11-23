@@ -1,0 +1,141 @@
+@import "./globals.css";
+
+.wrapper {
+  padding-top: 2em;
+  max-width: 900px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+    font-size: 2.5em;
+    line-height: 1.75;
+}
+
+.sub-text {
+    max-width: 700px;
+    font-size: 1.25em;
+    font-weight: 200;
+    font-family: "Druk", sans-serif;
+
+    color: var(--col-light-300)
+}
+
+.controls > button {
+  margin-top: 16px;
+  /* padding: 0.55em 1.25em; */
+  background-color: transparent;
+
+  text-decoration: underline;
+
+  font-weight: 600;
+  color: var(--col-light-500);
+  opacity: 0.75;
+}
+
+.controls {
+  /* margin-top: 1.55em; */
+  display: flex;
+  column-gap: 0.75em;
+}
+
+/* Form */
+.form-item {
+  margin-top: 2.5em;
+}
+
+.form-control {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  height: 250px;
+  /* padding-left: 1em; */
+  font-weight: bold;
+  font-size: 17em;
+  
+  font-family: "bebas neue";
+  letter-spacing: -0.015em;
+  color: var(--col-light-300);
+  display: flex;
+}
+
+.form-group-btn {
+  display: inline-block;
+}
+
+.form-group-btn > button {
+  width: fit-content;
+  height: 40px;
+  width: 250px;
+  padding-inline: 1em;
+
+  font-weight: bold;
+  color: rgb(230, 226, 204);
+  background-color: rgb(72, 50, 18);
+}
+
+.form-group-btn > p {
+  font-size: 0.75em;
+  font-family: Sans-serif;
+  margin-top: 1.5em;
+  color: var(--col-light-300)
+
+}
+
+
+.form-group-btn > button:hover {
+  background-color: rgba(188, 113, 0, 0.631);
+  transition: 1.35s;
+}
+
+
+@media screen and (max-width: 100px) {
+  h1 {
+    font-size: 1em;
+  }
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+#spinner {
+  display: none;
+  vertical-align: middle;
+  margin-left: 4px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgb(145, 91, 10);
+  border-left: 2px solid rgb(240, 162, 84);
+  border-radius: 50%;
+
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(360deg);
+    color: rgb(255, 145, 0);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.show{
+  display: inline-block !important;
+}
+

@@ -1,10 +1,13 @@
 {
   "name": "koha",
   "version": "1.0.0",
-  "description": "An ERC20 Token",
+  "description": "The Radioactive Wasp Token Sale in honour of KOHA",
   "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:client": "parcel",
+    "start:node":"npx hardhat node",
+    "deploy:localhost":"npx hardhat run --network localhost scripts/deploy.js"
   },
   "keywords": [
     "web3",
@@ -29,6 +32,8 @@
     "ethers": "^5.7.2",
     "hardhat": "^2.12.2",
     "hardhat-gas-reporter": "^1.0.9",
+    "parcel": "^2.8.0",
+    "process": "^0.11.10",
     "solidity-coverage": "^0.8.2",
     "typechain": "^8.1.1"
   }

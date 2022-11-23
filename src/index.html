@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script> -->
+    <title>Radioactive Wasps</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div>
+        <h1 class="title">☢ Radioactive Wasps</h1>
+        <p class="sub-text">
+          An ERC20 Token to power the next evolution of Wasps. Deployed on
+          <span>Polygon</span>. 1 KOHA sold for 0.001 matic
+        </p>
+      </div>
+      <div class="controls">
+        <button id="connectWallet">Connect Wallet</button>
+        <button id="addKohaBtn">Add Koha to Wallet</button>
+        <button id="addPolygonBtn">Add Polygon Mumbai to Wallet</button>
+        <button id="getMaticBtn">Get Free Matic Tokens</button>
+      </div>
+
+      <form class="form-item" role="form">
+        <div class="form-group">
+          <input type="number" class="form-control" id="amountOfToken" placeholder="0.00" min="0.00"/>
+          <span class="form-group-btn">
+            <button type="submit" id="buyToken">
+              Buy Tokens! <span id="spinner">|</span>
+            </button>
+            <p>You have <span id="userBalance">0</span> KOHA tokens</p>
+            <p><span id="amountSold">0</span> out of <span id="totalTokens">600</span> Tokens sold</p>
+          </span>
+        </div>
+      </form>
+    </main>
+
+    <!-- <script src="./js/ethers.min.js" ></script> -->
+    <script src="./js/utils.js"></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
