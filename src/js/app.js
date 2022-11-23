@@ -16,13 +16,13 @@ const state = {
   tokenSold: 0,
   contracts: {
     kohaTokenSale: {
-      address: "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
+      address: "0x7e17696dFB87903e9bf1d7dfD6c067490b2c26aB",
       abi: kohaTokenSaleAbi,
       contract: null,
       balance: 0,
     },
     kohaToken: {
-      address: "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0",
+      address: "0xbdDBECBAaF13d4111b69b3a5d305d060F87ef88B",
       abi: kohaTokenAbi,
       contract: null,
     },
@@ -104,7 +104,7 @@ addPolygonBtn.onclick = async () => {
 };
 
 getMaticBtn.onclick = () => {
-  window.open("https://google.com","_blank");
+  window.open("https://matic.supply","_blank");
 };
 
 const initWeb3 = async () => {

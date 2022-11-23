@@ -10,3 +10,6 @@ typechain-types
 cache
 artifacts
 
+.parcel-cache
+.dist
+
