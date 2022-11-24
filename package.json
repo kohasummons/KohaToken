@@ -2,7 +2,6 @@
   "name": "koha",
   "version": "1.0.0",
   "description": "The Radioactive Wasp Token Sale in honour of KOHA",
-  "main": "index.html",
   "source": "src/index.html",
   "scripts": {
     "start:client": "parcel",
